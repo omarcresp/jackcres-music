@@ -1,0 +1,30 @@
+@import '../../node_modules/bulma/bulma.sass';
+
+.results {
+  margin-top: 50px;
+}
+
+.is-active {
+  border: 5px solid #aa8ed6;
+}
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+html {
+  overflow-y: unset !important;
+}
+
+@media screen and (max-width: 600px) {
+  .search-bar {
+    flex-wrap: wrap;
+  }
+
+  .search-message {
+    text-align: right;
+  }
+}
