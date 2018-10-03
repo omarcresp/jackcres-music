@@ -41,7 +41,7 @@ import trackService from '@/services/track'
 import FooterComponent from '@/components/layout/footer.component.vue'
 import HeaderComponent from '@/components/layout/header.component.vue'
 import LoaderComponent from '@/components/shared/loader.component.vue'
-import TrackComponent from '@/components/track.vue'
+import TrackComponent from '@/components/track.component.vue'
 import NotificationComponent from '@/components/shared/notification.component.vue'
 
 export default {

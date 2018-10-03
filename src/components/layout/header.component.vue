@@ -1,4 +1,4 @@
-<template functional>
+<template>
     <section class="hero is-info">
         <div class="hero-head">
             <header class="nav">
@@ -17,10 +17,20 @@
             <div class="container has-text-centered">
                 <h1 class="title">JackCres Music</h1>
                 <h2 class="subtitle">Canciones que estan <strong>Vue</strong>nisimas</h2>
+                <player-component></player-component>
             </div>
         </div>
     </section>
 </template>
+
+<script>
+import PlayerComponent from '@/components/player.component.vue'
+
+export default {
+    components: { PlayerComponent }
+}
+</script>
+
 
 <style>
 .text-24-px {

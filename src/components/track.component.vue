@@ -19,9 +19,10 @@
                 Duration: <small>{{parseInt(track.duration_ms / 1000 / 60)}}m</small>
                 <nav class="level">
                     <div class="level-left">
-                        <a href="" class="level-item" @click.prevent="selectTrack">
+                        <a href="" class="level-item" @click.prevent="selectTrack" v-show="track.preview_url">
                             <span class="icon is-small">▶</span>
                         </a>
+                        <p v-show="!track.preview_url">No disponible</p>
                     </div>
                 </nav>
             </div>
@@ -37,6 +38,9 @@ export default {
     methods: {
         selectTrack () {
             this.$emit('select', this.track.id)
+            this.$bus.$emit('set-track', this.track)
+
+            window.scrollTo(0, 0)
         }
     }
 }
