@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="content">
-                Duration: <small>{{parseInt(track.duration_ms / 1000 / 60)}}m</small>
+                <small>{{ track.duration_ms | time }}</small>
                 <nav class="level">
                     <div class="level-left">
                         <a href="" class="level-item" @click.prevent="selectTrack" v-show="track.preview_url">
