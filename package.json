@@ -6,13 +6,14 @@
   "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot && lt --port 8080",
+    "dev": "lt --port 8080 & cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
     "bulma": "^0.4.3",
     "trae": "^1.4.2",
-    "vue": "^2.3.3"
+    "vue": "^2.3.3",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -29,7 +30,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "file-loader": "^0.9.0",
-    "localtunnel": "^1.9.1",
+    "ngrock-webpack-plugin": "^0.0.2",
     "node-sass": "^4.5.0",
     "pug": "^2.0.0-rc.2",
     "pug-loader": "^2.3.0",

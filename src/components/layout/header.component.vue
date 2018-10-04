@@ -9,6 +9,8 @@
                         </strong></div>
                     </div>
                     <div class="nav-right nav-menu">
+                        <router-link class="nav-item" to="/">Buscar</router-link>
+                        <router-link class="nav-item" to="about">Me</router-link>
                     </div>
                 </div>
             </header>

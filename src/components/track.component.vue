@@ -22,6 +22,9 @@
                         <a href="" class="level-item" @click.prevent="selectTrack" v-show="track.preview_url">
                             <span class="icon is-small">▶</span>
                         </a>
+                        <a href="" class="level-item" @click.prevent="goToTrack(track.id)" v-show="track.preview_url">
+                            <span class="icon">🌎</span>
+                        </a>
                         <p v-show="!track.preview_url">No disponible</p>
                     </div>
                 </nav>
@@ -41,6 +44,12 @@ export default {
             this.$bus.$emit('set-track', this.track)
 
             window.scrollTo(0, 0)
+        },
+        goToTrack (id) {
+            this.$router.push({
+                name: 'track',
+                params: { id }
+            })
         }
     }
 }
