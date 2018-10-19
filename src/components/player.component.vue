@@ -3,6 +3,8 @@
         <p><img :src="track.album.images[0].url"></p>
         <p>
             <strong>{{track.name}}</strong>
+            <br>
+            <small>{{track.artists[0].name}}</small>
         </p>
         <p>
             <audio controls :src="track.preview_url"></audio>
