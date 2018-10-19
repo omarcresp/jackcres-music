@@ -1,6 +1,6 @@
-import SearchPage from './components/search.page.vue'
-import AboutPage from './components/about.page.vue'
-import TrackDetailPage from './components/track-detail.page.vue'
+import SearchPage from '@/pages/search.page.vue'
+import AboutPage from '@/pages/about.page.vue'
+import TrackDetailPage from '@/pages/track-detail.page.vue'
 import VueRouter from 'vue-router'
 
 const routes = [
