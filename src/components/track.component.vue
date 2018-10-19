@@ -1,5 +1,5 @@
 <template functional>
-    <div class="card">
+    <div class="card" v-blur="track.preview_url">
         <div class="card-image">
             <figure class="image is-1by1"><img :src="track.album.images[0].url" alt=""></figure>
         </div>
