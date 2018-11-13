@@ -4,7 +4,7 @@
             <div class="column">
                 <div class="notification is-danger">
                     <slot name="body">
-                        Algo anduvo mal
+                        something went wrong
                     </slot>
                 </div>
             </div>

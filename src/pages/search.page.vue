@@ -3,9 +3,9 @@
     <section class="section">
         <nav class="nav">
             <div class="container search-bar">
-              <input class="input is-large" type="text" placeholder="Buscar canciones"
+              <input class="input is-large" type="text" placeholder="Search songs"
                 v-model="searchQuery" @keyup.enter="search" />
-              <a class="button is-info is-large" @click="search">Buscar</a>
+              <a class="button is-info is-large" @click="search">Search</a>
               <a class="button is-danger is-large">&times;</a>
             </div>
         </nav>
@@ -22,7 +22,7 @@
                 :class="{ 'is-active' : t.id === selectedTrack }" />
             </div>
             <notification-component v-show="showNotFoundNotification">
-              <p slot="body">No se encontraron resultados</p>
+              <p slot="body">No results</p>
             </notification-component>
           </div>
           <loader-component v-show="isLoading"/>
@@ -60,7 +60,7 @@ export default {
 
   computed: {
     searchMessage () {
-      return `Encontrados: ${this.tracks.length}`
+      return `Found: ${this.tracks.length}`
     }
   },
 

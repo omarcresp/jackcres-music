@@ -25,7 +25,7 @@
                         <a href="" class="level-item button is-blue" @click.prevent="goToTrack(track.id)" v-show="track.preview_url">
                             <span class="icon">🌎</span>
                         </a>
-                        <p v-show="!track.preview_url">No disponible</p>
+                        <p v-show="!track.preview_url">No avalible</p>
                     </div>
                 </nav>
             </div>

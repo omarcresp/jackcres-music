@@ -9,7 +9,7 @@
                         </strong></div>
                     </div>
                     <div class="nav-right nav-menu">
-                        <router-link class="nav-item" to="/">Buscar</router-link>
+                        <router-link class="nav-item" to="/">Search</router-link>
                         <router-link class="nav-item" to="about">Me</router-link>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 class="title">JackCres Music</h1>
-                <h2 class="subtitle">Canciones que estan <strong>Vue</strong>nisimas</h2>
+                <h2 class="subtitle">Songs that are <strong>Vue</strong>nisimas</h2>
                 <player-component></player-component>
             </div>
         </div>
