@@ -6,8 +6,8 @@
   "private": false,
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot",
-    "dev": "lt --port 8080 & cross-env NODE_ENV=development webpack-dev-server --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "bulma": "^0.4.3",
@@ -30,10 +30,10 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "file-loader": "^0.9.0",
-    "ngrock-webpack-plugin": "^0.0.2",
     "node-sass": "^4.5.0",
     "pug": "^2.0.0-rc.2",
     "pug-loader": "^2.3.0",
+    "push-dir": "^0.4.1",
     "sass-loader": "^5.0.1",
     "style-loader": "^0.23.0",
     "vue-loader": "^12.1.0",
