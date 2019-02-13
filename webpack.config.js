@@ -7,7 +7,6 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
     filename: 'build.js'
   },
 
@@ -73,7 +72,6 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
-      filename: path.resolve(__dirname, 'dist', 'index.html')
     })
   ])
 }
